@@ -1,0 +1,21 @@
+<div [hidden]="!wait" >
+  <P></P>
+  <strong>... In attesa della risposta ...</strong>
+</div>
+<div>
+  <ejs-grid #grid [dataSource]='data' height='600' [editSettings]='editSettings' 
+                        [allowPaging]="true" [allowFiltering]="true" 
+                        [allowSorting]="true" [pageSettings]='pageSettings'
+                        (dataBound)='dataBound()' >
+    <e-columns>
+      <e-column type='checkbox' width='40'></e-column>
+      <e-column field='ChgLine' headerText='Linea' textAlign='Center' [allowEditing]='true' editType= 'dropdownedit' [edit]='lineParams' width=150> </e-column>
+      <e-column field='Pallet.Code' headerText='Pallet' textAlign='Center' [allowEditing]= 'false' width='100'></e-column>
+      <e-column field='Pallet.Item.code' headerText='Item Code' textAlign='Right' [allowEditing]= 'false'></e-column>
+      <e-column field='EventDescr' headerText='Evento' textAlign='Center' width='100'></e-column>
+      <e-column field='EventDate' headerText='DataIsp' locale='it' textAlign='Right' [allowEditing]= 'true' editType='datepickeredit' ></e-column>
+      <e-column field='InspVolt' headerText='VoltIsp' textAlign='Right' [allowEditing]= 'false' width='100'></e-column>
+      <e-column headerText='Commands' width=120 [commands]='commands'></e-column>
+    </e-columns>  
+  </ejs-grid>
+</div>
