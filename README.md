@@ -1,5 +1,5 @@
 # How to Upload Files to Database in Blazor Application
-Upload files and save to database in the Blazor application using Syncfusion File Upload components.
+Upload and save files to database in the Blazor application using Syncfusion File Upload components.
 
 ## Project prerequisites
 Make sure that you have the compatible versions of [Visual Studio 2022]( https://visualstudio.microsoft.com/downloads?utm_source=github&utm_medium=listing&utm_campaign=blazor-file-upload-github-samples) and [.NET Core SDK 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) or later version in your machine before starting to work on this project.
